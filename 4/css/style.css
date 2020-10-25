@@ -51,7 +51,7 @@ a {
 
 .main-content {
     display: flex;
-    height: 100vh; 
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ a {
 .link-more {
     display: inline-block;
     padding: 20px;
-    margin: 0 10px; 
+    margin: 0 10px;
     color: #fff;
     background: rgba(0,0,0,0);
     border: 3px solid #fff;
@@ -125,17 +125,17 @@ a {
 }
 
 .program-list-item:before {
-    content: "• "; 
+    content: "• ";
     position: relative;
     top: 6px;
 
     display: inline-block;
-    margin-right: 5px; 
+    margin-right: 5px;
 
-    color: #2f1ce4; 
+    color: #2f1ce4;
     font-size: 36px;
     line-height: 18px;
-    
+
 }
 
 .program-paragraf {
@@ -160,7 +160,7 @@ a {
     border-collapse: collapse;
 }
 
-.program-table td, 
+.program-table td,
 .program-table th {
     padding: 10px;
     border: 1px solid #a0a0a0;
@@ -175,8 +175,13 @@ a {
 }
 
 .modules-containter {
-    max-width: 1170px;
+    max-width: 1180px;
     margin: 0 auto;
+}
+
+.modules-footer {
+    width: 100%;
+    height: 620px;
 }
 
 .modules-skillbox-logo {
@@ -190,11 +195,13 @@ a {
 
 .modules {
     padding: 80px;
-    margin: 0 -30px;
+    margin: 0;
     font-size: 0;
+    text-align: justify;
 }
 
 .modules-title {
+    margin-left: 20px;
     margin-bottom: 30px;
     font-family: 'Graphik LCG', sans-serif;
     font-weight: 800;
@@ -203,8 +210,8 @@ a {
 
 .modules-item {
     display: inline-block;
-    width: calc(50% - 60px);
-    margin: 30px 30px;
+    width: 480px;
+    margin: 30px 0;
     box-shadow: 3px 3px 20px rgba(83, 83, 83, .3);
     font-size: 0;
 }
@@ -228,5 +235,27 @@ a {
 }
 
 .modules-item-num {
-    
+    margin: 20px;
+    text-align: right;
+    font-size: 48px;
+    color: #eaeaea;
+}
+
+.modules-more {
+    display: block;
+    width: 280px;
+    height: 80px;
+    margin: 10px auto;
+    line-height: 80px;
+    text-align: center;
+    border: 3px solid #2f1ce4;
+    font-size: 18px;
+    color: #2f1ce4;
+}
+
+.bg-modules {
+    background: url('../image/modules/modules-bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
