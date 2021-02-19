@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  
+img {
+  max-width: 100%;
+}
+  
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  /* Header */
+.header {
+  height: 110px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  margin-right: 35px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu */
+.section-menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Section Hero */
+.section-hero-container {
+  display: flex;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  width: 50%;  
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-offer {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.hotel-heading {
+  padding-left: 25px;
+}
+
+/* Services */
+.section-services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-services-item {
+  width: 50%;
+}
+
+.section-services-item:nth-child(2n+1) {
+  padding-right: 25px;
+}
+
+/* Benefits*/
+.section-benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.section-benefits-item {
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Accommodation  */
+.section-accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.section-accommodation-item {
+  width: calc(100% / 3);
+  padding: 10px 10px;
+}
