@@ -104,11 +104,6 @@ img {
 }
 
 /* Benefits*/
-.section-benefits-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -118,4 +113,16 @@ img {
 .section-benefits-item {
   width: 25%;
   padding: 0 10px;
+}
+
+/* Accommodation  */
+.section-accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.section-accommodation-item {
+  width: calc(100% / 3);
+  padding: 10px 10px;
 }
