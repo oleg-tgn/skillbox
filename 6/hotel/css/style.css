@@ -88,3 +88,34 @@ img {
 .hotel-heading {
   padding-left: 25px;
 }
+
+/* Services */
+.section-services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-services-item {
+  width: 50%;
+}
+
+.section-services-item:nth-child(2n+1) {
+  padding-right: 25px;
+}
+
+/* Benefits*/
+.section-benefits-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.section-benefits-item {
+  width: 25%;
+  padding: 0 10px;
+}
