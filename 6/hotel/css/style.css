@@ -56,3 +56,21 @@ img {
 .header-login {
   color: #000
 }
+
+/* Menu */
+.section-menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #000;
+}
