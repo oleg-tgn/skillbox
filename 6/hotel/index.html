@@ -55,7 +55,7 @@
     </section> <!-- .section-menu -->
 
     <section class="section-hero">
-      <div class="container">
+      <div class="container section-hero-container">
         <div class="reservation">
           <h2 class="hotel-heading">
             Быстрая бронь
@@ -66,12 +66,14 @@
             <input class="reservation-form-input" type="text" placeholder="Дата заселения">
             <input class="reservation-form-input" type="text" placeholder="Количество ночей">
             <input class="reservation-form-input" type="text" placeholder="Количество гостей">
-            <button class="reservation-form-btn">
-              Найти номер
-            </button>
-            <label class="reservation-form-label">
-              <a href="#" class="reservation-count">9 756</a> предложений доступно
-            </label>
+            <div class="reservation-form-row">
+              <button class="reservation-form-btn">
+                Найти номер
+              </button>
+              <label class="reservation-form-label">
+                <a href="#" class="reservation-count">9 756</a> предложений доступно
+              </label>
+            </div>            
           </form>
         </div><!--reservation-->
         <div class="special-offer">
@@ -81,9 +83,7 @@
           <ul class="special-offer-slider">
             <li>
               <h3 class="special-offer-heding">
-                Номера<br>
-                категории<br>
-                люкс
+                Номера категории люкс
               </h3>
               <span class="special-offer-price">
                 от 5 000 р

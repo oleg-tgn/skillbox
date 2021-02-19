@@ -7,6 +7,7 @@ html {
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -49,14 +50,6 @@ img {
   align-items: center;
 }
 
-.header-phone {
-  color: #000;
-}
-
-.header-login {
-  color: #000
-}
-
 /* Menu */
 .section-menu-container {
   display: flex;
@@ -71,6 +64,27 @@ img {
   margin-right: 20px;
 }
 
-.nav-link {
-  color: #000;
+/* Section Hero */
+.section-hero-container {
+  display: flex;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  width: 50%;  
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-offer {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.hotel-heading {
+  padding-left: 25px;
 }
