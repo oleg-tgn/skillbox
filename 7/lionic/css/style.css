@@ -78,9 +78,26 @@ img {
   text-align: center;
 }
 
+.section-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 300;
+  color: #414141;
+}
+
+.section-description {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #787878;
+}
+
 /* Header */
 .header {
   height: 110px;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .header-container {
@@ -177,6 +194,7 @@ img {
 .section-do {
   padding-top: 140px;
   padding-bottom: 100px;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .section-description {
@@ -190,10 +208,37 @@ img {
 
 .section-do-item {
   flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
 }
 
 .section-do-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.section-do-item-heading {
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.section-do-icon {
+  margin-bottom: 30px;
+}
+
+.section-do-item-description {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  text-align: center;
+  color: #787878;
 }
 
 /* Clients */
@@ -201,6 +246,11 @@ img {
 .section-clients {
   padding-top: 90px;
   padding-bottom: 100px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.section-clients {
+  margin-bottom: 45px;
 }
 
 .section-clients-list {
@@ -208,16 +258,33 @@ img {
 }
 
 .section-clients-item {
-   flex: 1 1 33.33%
+  flex: 1 1 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding: 50px 35px 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
 }
 
 .section-clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.section-clients-testimonial {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #787878;
+}
+
 .section-clients-user {
   display: flex;
   align-items: center;
+  padding-top: 28px;
+  border-top: 1px solid #e9e9e9;
 }
 
 .section-clients-avatar {
@@ -227,6 +294,21 @@ img {
   border-radius: 50%;
   margin-right: 15px;
 }
+
+.section-clients-username {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.section-clients-user-description {
+  font-size: 14px;
+  line-height: 25px;
+  color: #787878;
+  
+}
+
 
 /* Contacts */
 .section-contacts {
