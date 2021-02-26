@@ -94,7 +94,7 @@ img {
 .header-login {
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: #cc9933;
 }
 
 /* Menu */
@@ -103,7 +103,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 14px 45px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 15px;
 }
 
@@ -127,11 +127,11 @@ img {
 .section-menu-right-btn {
   display: inline-block;
   padding: 13px 20px;  
-  border: 1px solid #CC9933;
+  border: 1px solid #cc9933;
   border-radius: 10px;
   font-size: 16px;
   line-height: 1;
-  color: #CC9933;
+  color: #cc9933;
 }
 
 .section-menu-right-btn:not(:last-child) {
@@ -153,12 +153,112 @@ img {
   flex: 1 1 50%;
   display: flex;
   flex-direction: column;
+  margin-right: 23px;
 }
 
 .special-offer-right {
   flex: 1 1 50%;
 }
 
+.special-offer-left-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.special-offer-left-item:first-child {
+  margin-bottom: 23px;
+}
+
+.special-offer-left-item > * {
+  position: relative;
+  z-index: 10;
+}
+
+.special-offer-right-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 40px 40px;
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.special-offer-item-maldives {
+  background-image: url('../img/maldives.jpg');
+}
+
+.special-offer-item-crete {
+  background-image: url('../img/crete.jpg');
+}
+
+.special-offer-item-lux {
+  background-image: url('../img/lux.jpg');
+}
+
+.special-offer-item-maldives:after {
+  content: "";
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+}
+
+.special-offer-heading {
+  max-width: 300px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.special-offer-heading-lux {
+  font-size: 60px;
+}
+
+.special-offer-price {
+  margin-bottom: 45px;
+  font-size: 20px;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.special-offer-price-lux {
+  font-size: 30px;
+}
+
+.special-offer-more-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffcc66;
+}
+
+.special-offer-more-link:after {
+  content: "";
+  display: inline-block;
+  background-image: url('../img/link-more.svg');
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  transform: translateY(4px);
+}
 
 /* Services */
 .section-services-list {
