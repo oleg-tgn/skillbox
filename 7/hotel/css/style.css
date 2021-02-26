@@ -367,6 +367,84 @@ img {
 }
 
 .accommodation-item {
-  width: calc(100% / 3);
-  padding: 10px 10px;
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
 }
+
+.accommodation-img {
+  width: 100%;
+}
+
+.accommodation-content {
+  padding: 35px 45px 40px;
+}
+
+.accommodation-price-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.accommodation-price {
+  font-size: 16px;
+  color: #999;
+}
+
+.accommodation-price-value {
+  color: #000;
+}
+
+.accommodation-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.accommodation-location {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+}
+
+.accommodation-link {
+  display: inline-block;
+  padding: 13px 20px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  color: #cc9933;
+}
+
+.accommodation-item-show-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 55px;
+  background-image: url('../img/accommodation-all.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accommodation-show-all {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 500;
+  color: #ffffff;  
+}
+
+.accommodation-show-all:after {
+  content: "";
+  display: inline-block;
+  background-image: url('../img/accommodation-more.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  transform: translateY(4px);
+}
+
