@@ -513,3 +513,63 @@ img {
   font-size: 16px;
   color: #cc9933;
 }
+
+
+/* Contacts */
+.contacts {
+  display: flex;
+  flex-direction: row;
+  padding: 45px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.contacts-info {
+  width: 40%;
+  padding-right: 45px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.contact-item:first-child {
+  padding-top: 0;
+}
+
+.contacts-label {
+  width: 35%;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  color: #000;
+}
+
+.contacts-data {
+  width: 65%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.contacts-data-booking {
+  color: #999999;
+}
+
+.contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #cc9933;
+}
+
+.contacts-btn {
+  display: inline-block;
+  margin-top: 45px;
+  padding: 27px 29px;
+  border: 1px solid #cc9933;
+  border-radius: 15px;
+  color: #cc9933;
+}
