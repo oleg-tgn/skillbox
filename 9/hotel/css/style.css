@@ -109,6 +109,35 @@ img {
   color: #cc9933;
 }
 
+.header-login:hover {
+  opacity: .7;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 20px;  
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 42px;
+  color: #cc9933;
+  background: #fff;
+  transition: background-color .4s ease, color .3s linear;
+}
+
+.btn_big {
+  padding: 0 29px;
+  line-height: 62px;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: #cc9933;
+  color: #fff;
+}
+
 /* Menu */
 .menu {
   display: flex;
@@ -134,20 +163,21 @@ img {
 
 .nav-link {
   color: #666666;
+  transition: color .3s ease;
 }
 
-.menu-right-btn {
-  display: inline-block;
-  padding: 13px 20px;  
-  border: 1px solid #cc9933;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 1;
+.nav-link:hover {
   color: #cc9933;
 }
 
 .menu-right-btn:not(:last-child) {
   margin-right: 40px;
+}
+
+.menu-right-btn:hover {
+  opacity: 1;
+  background-color: #cc9933;
+  color: #fff;
 }
 
 /* Section Hero */
@@ -178,9 +208,11 @@ img {
   position: relative;
   padding: 40px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
   border-radius: 15px;
   overflow: hidden;
+  transition: background-size .5s ease-out;
 }
 
 .special-offer-left-item:first-child {
@@ -200,9 +232,23 @@ img {
   position: relative;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
   border-radius: 15px;
   overflow: hidden;
+  transition: background-size 0.5s ease-out;
+}
+
+.special-offer-left-item > *,
+.special-offer-right-item > * {
+  position: relative;
+  z-index: 2;
+} 
+
+.special-offer-left-item:hover,
+.special-offer-right-item:hover {
+  background-size: 110%;
+  opacity: 1;
 }
 
 .special-offer-item-maldives {
@@ -295,8 +341,27 @@ img {
   overflow: hidden;
 }
 
+.services-image-wrap {
+  display: flex;  
+  height: 170px;
+}
+
 .services-image {
   width: 100%;
+  height: 170px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-out;
+}
+
+.services-image-1 { background-image: url("../img/services-1.jpg"); }
+.services-image-2 { background-image: url("../img/services-2.jpg"); }
+.services-image-3 { background-image: url("../img/services-3.jpg"); }
+.services-image-4 { background-image: url("../img/services-4.jpg"); }
+
+.services-image:hover {
+  background-size: 110%;
 }
 
 .services-content {
@@ -415,25 +480,29 @@ img {
   color: #999;
 }
 
-.accommodation-link {
-  display: inline-block;
-  padding: 13px 20px;
-  border: 1px solid #cc9933;
-  border-radius: 10px;
-  color: #cc9933;
+.accommodation-item-show-all { 
+  background-image: url('../img/accommodation-all.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size .5s ease-out;
 }
 
-.accommodation-item-show-all {
+.accommodation-item-show-all:hover {
+  background-size: 110%;
+}
+
+.accommodation-item-show-all__link {
+  display: block;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px 55px;
-  background-image: url('../img/accommodation-all.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.accommodation-show-all {
+.accommodation-item-show-all__label {
   position: relative;
   display: inline-block;
   font-size: 20px;
@@ -510,16 +579,6 @@ img {
   border: 0;
 }
 
-.tour-form-button {
-  padding: 13px 30px;
-  background: #fff;
-  border: 1px solid #cc9933;
-  border-radius: 15px;
-  font-size: 16px;
-  color: #cc9933;
-}
-
-
 /* Contacts */
 .contacts {
   display: flex;
@@ -571,12 +630,7 @@ img {
 }
 
 .contacts-btn {
-  display: inline-block;
   margin-top: 45px;
-  padding: 27px 29px;
-  border: 1px solid #cc9933;
-  border-radius: 15px;
-  color: #cc9933;
 }
 
 /* Footer */
@@ -611,6 +665,11 @@ img {
 
 .footer-link {
   color: #cc9933;
+  transition: color .3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
 }
 
 .footer-address {
