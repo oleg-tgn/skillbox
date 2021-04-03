@@ -260,12 +260,6 @@ img {
   z-index: 2;
 }
 
-.special-offer-left-item:hover,
-.special-offer-right-item:hover {
-  background-size: 110%;
-  opacity: 1;
-}
-
 .special-offer-item-maldives {
   background-image: url('../img/maldives.jpg');
 }
@@ -278,7 +272,18 @@ img {
   background-image: url('../img/lux.jpg');
 }
 
-.special-offer-item-maldives:after {
+.accommodation-item-show-all {
+  position: relative;
+}
+
+.accommodation-item-show-all > * {
+  position: relative;
+  z-index: 10;
+}
+
+.special-offer-left-item:after,
+.special-offer-right-item:after,
+.accommodation-item-show-all:after {
   content: "";
   display: block;
   z-index: 1;
@@ -288,7 +293,22 @@ img {
   bottom: 0;
   left: 0;
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+
 }
+
+.special-offer-left-item:hover::after,
+.special-offer-right-item:hover::after,
+.accommodation-item-show-all:hover::after {
+  opacity: 1;
+}
+
+.special-offer-right-item:after,
+.accommodation-item-show-all:after {
+  background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+}
+
 
 .special-offer-heading {
   max-width: 300px;
@@ -503,11 +523,6 @@ img {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-size .5s ease-out;
-}
-
-.accommodation-item-show-all:hover {
-  background-size: 110%;
 }
 
 .accommodation-item-show-all__link {
