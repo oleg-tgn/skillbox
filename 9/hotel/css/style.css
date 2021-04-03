@@ -4,31 +4,31 @@
   font-weight: 300;
   src: local(''),
        url('../fonts/MullerLight.woff2') format('woff2'),
-       url('../fonts/MullerLight.woff') format('woff'); 
+       url('../fonts/MullerLight.woff') format('woff');
 }
 @font-face {
   font-family: 'Muller';
   font-style: normal;
-  font-weight: 400;  
+  font-weight: 400;
   src: local(''),
        url('../fonts/MullerRegular.woff2') format('woff2'),
-       url('../fonts/MullerRegular.woff') format('woff'); 
-      
+       url('../fonts/MullerRegular.woff') format('woff');
+
 }
 @font-face {
   font-family: 'Muller';
   font-style: normal;
-  font-weight: 500;  
+  font-weight: 500;
   src: local(''),
-       url('../fonts/MullerMedium.woff2') format('woff2'), 
+       url('../fonts/MullerMedium.woff2') format('woff2'),
        url('../fonts/MullerMedium.woff') format('woff');
 }
 @font-face {
   font-family: 'Muller';
   font-style: normal;
-  font-weight: 600; 
+  font-weight: 600;
   src: local(''),
-       url('../fonts/MullerBold.woff2') format('woff2'), 
+       url('../fonts/MullerBold.woff2') format('woff2'),
        url('../fonts/MullerBold.woff') format('woff'),
 }
 
@@ -45,7 +45,7 @@
 
   --color-white: #fff;
   --color-white-2: #e9e9e9;
-  --color-white-3: #e5e5e5; 
+  --color-white-3: #e5e5e5;
   --color-white-4: #e1e1e1;
 }
 
@@ -70,11 +70,11 @@ ul {
   padding: 0;
   list-style: none;
 }
-  
+
 img {
   max-width: 100%;
 }
-  
+
 .container {
   max-width: 1200px;
   margin-right: auto;
@@ -130,7 +130,7 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 0 20px;  
+  padding: 0 20px;
   border: 1px solid var(--color-yellow);
   border-radius: 10px;
   font-size: 16px;
@@ -169,7 +169,7 @@ img {
 
 .nav-item {
   font-size: 16px;
-  line-height: 1;  
+  line-height: 1;
 }
 
 .nav-item:not(:last-child) {
@@ -258,7 +258,7 @@ img {
 .special-offer-right-item > * {
   position: relative;
   z-index: 2;
-} 
+}
 
 .special-offer-left-item:hover,
 .special-offer-right-item:hover {
@@ -335,7 +335,7 @@ img {
 
 /* About */
 .about-description {
-  max-width: 900px;  
+  max-width: 900px;
   font-size: 16px;
   line-height: 2;
   color: var(--color-black);
@@ -350,14 +350,14 @@ img {
 
 .services-item {
   width: calc(50% - 24px);
-  margin: 12px;  
+  margin: 12px;
   background: var(--color-white);
   border-radius: 15px;
   overflow: hidden;
 }
 
 .services-image-wrap {
-  display: flex;  
+  display: flex;
   height: 170px;
 }
 
@@ -407,7 +407,7 @@ img {
 }
 
 .services-description {
-  margin: 0;  
+  margin: 0;
   font-size: 16px;
   line-height: 2;
   color: var(--color-black);
@@ -432,7 +432,7 @@ img {
   margin-right: 0;
 }
 
-.benefits-description {  
+.benefits-description {
   font-size: 16px;
   line-height: 2;
   color: #000000;
@@ -441,7 +441,7 @@ img {
 .benefits-icon {
   display: inline-block;
   width: auto;
-  height: 66px;  
+  height: 66px;
   margin-bottom: 10px;
 }
 /* Accommodation  */
@@ -493,7 +493,12 @@ img {
   font-weight: 400;
   color: var(--color-grey-3);}
 
-.accommodation-item-show-all { 
+.accommodation-item-show-all {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 55px;
   background-image: url('../img/accommodation-all.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -506,13 +511,16 @@ img {
 }
 
 .accommodation-item-show-all__link {
-  display: block;
+  display: inline-block;
+}
+
+.accommodation-item-show-all__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px 55px;
 }
 
 .accommodation-item-show-all__label {
@@ -537,7 +545,7 @@ img {
 
 /*Tour Form*/
 .tour {
-  margin-top: 65px; 
+  margin-top: 65px;
   padding: 40px 40px 75px;
   background: var(--color-white-2);
   border-radius: 15px;
@@ -555,10 +563,10 @@ img {
   margin-top: 20px;
   padding: 30px;
   background: var(--color-white);
-  border-radius: 15px;  
+  border-radius: 15px;
 }
 
-.tour-form-group {  
+.tour-form-group {
   display: flex;
   width: calc(87% / 5);
   flex-direction: column;
@@ -665,7 +673,7 @@ img {
 
 .footer-coopyright {
   width: 30%;
-  max-width: 320px;  
+  max-width: 320px;
 }
 
 .footer-paragraph {
@@ -689,7 +697,7 @@ img {
   font-style: normal;
 }
 
-.footer-contacts {  
+.footer-contacts {
   position: relative;
   width: 50%;
 }
@@ -702,7 +710,7 @@ img {
   width: 254px;
   height: 228px;
   background-image: url('../img/sun.png');
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .footer-social {
