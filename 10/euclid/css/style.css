@@ -4,12 +4,51 @@
   --white-color: #fff;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .burger {
   width: var(--burger-width);
   height: var(--burger-height);
   position: relative;
   color: #000;
   display: none;
+}
+
+.tab-content__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-content__left {
+  width: 50%;
+}
+
+.tab__title {
+  margin-bottom: 50px;
+}
+
+.tab__descr {
+  padding-right: 60px;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.tab__btns {
+  display: flex;
+  margin-top: 92px;
+}
+
+.btn-dogr {
+  width: 147px;
+  height: 60px;
+  border: 1px solid #333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 40px;
 }
 
 /* Nav */
@@ -22,11 +61,17 @@
 
 /* Hero */
 .hero__descr {
+  max-width: 50%;
   margin-top: 15px;
+  margin-bottom: 97px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: var(--white-color);
+}
+
+.btn {
+  width: 287px;
 }
 
 /* About */
