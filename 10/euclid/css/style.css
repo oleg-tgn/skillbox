@@ -1,0 +1,144 @@
+:root {
+  --burger-width: 30px;
+  --burger-height: 23px;
+  --white-color: #fff;
+}
+
+.burger {
+  width: var(--burger-width);
+  height: var(--burger-height);
+  position: relative;
+  color: #000;
+  display: none;
+}
+
+/* Nav */
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 80px;
+}
+
+/* Hero */
+.hero__descr {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white-color);
+}
+
+/* About */
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__col {
+  width: 49.2%;
+}
+
+.form__data {
+  flex-shrink: 0;
+  display: inline-block;
+  font-size: 16px;
+  color: #cacaca;
+  margin-left: 30px;
+  padding-left: 24px;
+  white-space: normal;
+}
+
+/* Footer */
+.footer__right {
+  padding-top: 137px;
+  flex-shrink: 0;
+}
+
+.footer-menu__item {
+  margin-bottom: 16px;
+}
+
+.footer-menu__link {
+  font-size: 18px;
+  color: #cacaca;
+  font-weight: 600;
+}
+
+@media (max-width: 1366px) {
+  .hero__title {
+    max-width: none;
+  }
+  .hero__descr {
+    max-width: none;
+  }
+  .about__item {
+    display: block;
+  }
+  .about__col:first-child {
+    width: 60%;
+  }
+  .about__col:last-child {
+    width: 37%;
+  }
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__center {
+    margin: 0 50px;
+    max-width: 45%;
+  }
+  .form__bottom {
+    display: block;
+  }
+  .form__data {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .footer__left {
+    max-width: 40%;
+  }
+  .footer__left,
+  .footer__right,
+  .footer__center {
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .for-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-content__item {
+    flex-direction: column;
+  }
+  .tab-content__left {
+    width: 100%;
+  }
+  .tab__image {
+    width: 100%;
+  }
+  .about__col {
+    width: 100% !important;
+  }
+  .about__content {
+    flex-direction: column;
+  }
+  .banner__slide {
+    padding: 50px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .header__search {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-left: 30px;
+  }
+}

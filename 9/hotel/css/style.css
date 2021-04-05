@@ -276,11 +276,6 @@ img {
   position: relative;
 }
 
-.accommodation-item-show-all > * {
-  position: relative;
-  z-index: 10;
-}
-
 .special-offer-left-item:after,
 .special-offer-right-item:after,
 .accommodation-item-show-all:after {
@@ -531,6 +526,7 @@ img {
   line-height: 2;
   font-weight: 500;
   color: var(--color-white);
+  z-index: 10;
 }
 
 .accommodation-item-show-all__link::before {
