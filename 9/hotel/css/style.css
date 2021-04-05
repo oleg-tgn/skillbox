@@ -527,6 +527,10 @@ img {
 
 .accommodation-item-show-all__link {
   display: inline-block;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 500;
+  color: var(--color-white);
 }
 
 .accommodation-item-show-all__link::before {
@@ -536,15 +540,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.accommodation-item-show-all__label {
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  line-height: 2;
-  font-weight: 500;
-  color: var(--color-white);
 }
 
 .accommodation-show-all:after {
