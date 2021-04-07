@@ -66,20 +66,21 @@ svg {
   text-align: center;
   color: var(--color-white);
   cursor: pointer;
+  transition: background-color .3s ease;
 }
 
 .btn:hover {
-  background: var(--color-orange);
+  background-color: var(--color-orange);
 }
 
 .btn:active {
   border-color: var(--color-orange-dark);
-  background: var(--color-orange-dark);
+  background-color: var(--color-orange-dark);
 }
 
-.btn-filled { border-color: var(--color-orange); background: var(--color-orange); }
-.btn-filled:hover { border-color: rgba(255, 153, 0, 0.6); background: rgba(255, 153, 0, 0.6); }
-.btn-filled:active { background: #e1670e; }
+.btn-filled { border-color: var(--color-orange);  background-color: var(--color-orange); }
+.btn-filled:hover { border-color: rgba(255, 153, 0, 0.6);  background-color: rgba(255, 153, 0, 0.6); }
+.btn-filled:active {  background-color: #e1670e; }
 
 .btn-grey {
   padding-top: 21px;
@@ -90,12 +91,12 @@ svg {
 
 .btn-grey:hover {
   color: var(--color-white);
-  background: var(--color-grey-light);
+  background-color: var(--color-grey-light);
 }
 
 .btn-grey:active {
   color: var(--color-white);
-  background: var(--color-black);
+  background-color: var(--color-black);
   border: 1px solid var(--color-black);
 }
 
