@@ -18,12 +18,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2;
   color: var(--color-grey);
 }
 
@@ -57,8 +61,8 @@ svg {
   padding: 19px 38px;
   border: 3px solid var(--color-orange);
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2rem;
   text-align: center;
   color: var(--color-white);
   cursor: pointer;
@@ -96,8 +100,8 @@ svg {
 }
 
 .btn-big {
-  font-size: 23px;
-  line-height: 35px;
+  font-size: 2.3rem;
+  line-height: 3.5rem;
 }
 
 .btn-reset {
@@ -121,8 +125,8 @@ svg {
   height: 16px;
   border-radius: 50%;
   text-align: center;
-  font-size: 10px;
-  line-height: 16px;;
+  font-size: 1rem;
+  line-height: 16px;
   color: var(--color-white);
   background: var(--color-orange);
 }
@@ -177,8 +181,8 @@ svg {
 
 .nav__link {
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   text-align: center;
   color: var(--text-grey);
 }
@@ -203,8 +207,8 @@ svg {
 .title {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 59px;
+  font-size: 4.8rem;
+  line-height: 5.9rem;
   color: var(--color-grey);
 }
 
@@ -224,8 +228,8 @@ svg {
 .tab__descr {
   padding-right: 60px;
   margin-bottom: 92px;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 .tab__btns {
@@ -236,7 +240,7 @@ svg {
   width: 147px;
   height: 60px;
   border: 1px solid #333;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-left: 40px;
 }
@@ -244,14 +248,14 @@ svg {
 .article__title {
   margin-bottom: 4px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.4rem;
   letter-spacing: 0.5px;
-  line-height: 32px;
+  line-height: 2;
 }
 
 .article__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2;
 }
 
@@ -274,8 +278,8 @@ svg {
   max-width: 840px;
   margin-bottom: 20px;
   font-weight: 800;
-  font-size: 70px;
-  line-height: 86px;
+  font-size: 7rem;
+  line-height: 8.6rem;
   color: var(--color-white);
 }
 
@@ -283,9 +287,9 @@ svg {
   max-width: 840px;
   margin-bottom: 96px;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 2.3rem;
   letter-spacing: 0.5px;
-  line-height: 29px;
+  line-height: 2.9rem;
   color: var(--color-white);
 }
 
@@ -345,8 +349,8 @@ svg {
 
 .project__text {
   padding-right: 76px;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 2;
   font-weight: 600;
   color: var(--color-white);
 }
@@ -355,6 +359,7 @@ svg {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 67px 62px;
   border: 1px solid #CACACA;
   background: var(--color-white);
@@ -367,19 +372,19 @@ svg {
 
 .service__descr {
   width: calc(100% - 178px - 59px);
+  max-width: 452px;
   line-height: 2;
 }
 
 .service__title {
   margin-bottom: 4px;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
 }
 
 .service__text {
-  max-width: 452px;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 /* Work */
@@ -403,8 +408,8 @@ svg {
 
 .tabs__link {
   display: inline-block;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   color: var(--color-grey);
 }
 
@@ -435,6 +440,7 @@ svg {
   display: inline-block;
   margin-top: 12px;
   margin-left: 17px;
+  width: calc(100% - 17px);
 }
 
 .btn-group__btn:not(:last-child) {
@@ -444,7 +450,7 @@ svg {
 .form__data {
   flex-shrink: 0;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #cacaca;
   margin-left: 30px;
   padding-left: 24px;
@@ -457,7 +463,7 @@ svg {
 }
 
 .faq__title {
-  margin-bottom: 27px;
+  margin-bottom: 33px;
 }
 
 .faq__item {
@@ -474,9 +480,10 @@ svg {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 39px 0;
+  padding: 30px 0;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.4rem;
+  letter-spacing: 0.4px;
   line-height: 1;
   color: var(--color-grey);
 }
@@ -518,7 +525,7 @@ svg {
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .footer__right {
@@ -527,7 +534,7 @@ svg {
 }
 
 .footer-menu {
-  margin-bottom: 119px;
+  margin-bottom: 106px;
 }
 
 .footer-menu__item {
@@ -535,7 +542,7 @@ svg {
 }
 
 .footer-menu__link {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #cacaca;
   font-weight: 600;
 }
@@ -543,18 +550,22 @@ svg {
 .footer__description {
   display: flex;
   max-width: 363px;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: auto;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 2;
   color: #CACACA;
 }
 
 .footer__title {
-  margin-bottom: 31px;
-  font-size: 48px;
-  line-height: 59px;
+  margin-bottom: 11px;
+  font-size: 4.8rem;
+  line-height: 8rem;
   color: #CACACA;
+}
+
+.footer__request {
+  padding: 0 10px;
 }
 
 .form {
@@ -569,8 +580,8 @@ svg {
   padding: 14px 24px;
   margin-bottom: 25px;
   border: none;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 2;
   color: var(--color-white);
   background: #414141;
 }
@@ -634,81 +645,95 @@ svg {
 }
 
 .social__link:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 21px;
 }
 
 @media (max-width: 1366px) {
-  .hero__title {
-    max-width: none;
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
-  .hero__descr {
-    max-width: none;
+
+  .about__content {
+    flex-direction: column;
   }
-  .about__item {
-    display: block;
+
+  .about__col {
+    width: 100%;
   }
+
   .about__col:first-child {
-    width: 60%;
+    margin-bottom: 30px;
+    padding: 0;
   }
+
   .about__col:last-child {
-    width: 37%;
+    padding: 0;
   }
-  .footer__container {
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .banner__slide {
+    background-size: cover;
   }
-  .footer__center {
-    margin: 0 50px;
-    max-width: 45%;
+
+  .project {
+    height: 500px;
+    background-size: cover;
   }
-  .form__bottom {
-    display: block;
+
+  .form__row {
+    flex-direction: column;
   }
-  .form__data {
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  .footer__left {
-    max-width: 40%;
-  }
-  .footer__left,
-  .footer__right,
-  .footer__center {
-    flex-shrink: 1;
+
+  .footer__btn {
+    margin-bottom: 25px;
   }
 }
 
 @media (max-width: 1024px) {
-  .for-mobile {
-    display: block;
+  html {
+    font-size: 8px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 55px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+
+  .step {
+    flex-direction: column-reverse;
+  }
+
+  .step__col {
+    width: 100%;
+  }
+
+  .step__img {
+    margin-left: 0;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .article {
+    max-width: none;
+  }
+
+  .footer__col {
+    padding: 0 20px;
+  }
+
+  .footer__title {
+    font-size: 3.3rem;
   }
 }
 
 @media (max-width: 992px) {
-  .tab-content__item {
-    flex-direction: column;
-  }
-  .tab-content__left {
-    width: 100%;
-  }
-  .tab__image {
-    width: 100%;
-  }
-  .about__col {
-    width: 100% !important;
-  }
-  .about__content {
-    flex-direction: column;
-  }
-  .banner__slide {
-    padding: 50px;
-  }
   .nav__list {
     display: none;
   }
-  .header__search {
-    display: none;
-  }
+
   .burger {
     display: block;
     margin-left: 30px;

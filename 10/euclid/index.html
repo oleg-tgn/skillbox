@@ -30,7 +30,11 @@
             </svg>
           </button>
           <button class="btn-reset burger">
-            <span class="burger__line"></span>
+            <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="30" height="3" fill="#333333"/>
+              <rect y="10" width="30" height="3" fill="#333333"/>
+              <rect y="20" width="30" height="3" fill="#333333"/>
+              </svg>
           </button>
         </nav>
       </div>
@@ -216,17 +220,19 @@
           </nav>
         </div>
         <div class="footer__col">
-          <h2 class="footer__title title">Оставить заявку</h2>
-          <form action="#" class="form">
-            <input class="input" type="text" name="name" placeholder="Фамилия, имя и отчество*">
-            <input class="input" type="email" name="email" placeholder="E-mail*">
-            <textarea class="textarea" name="text" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-            <div class="form__row">
-              <button class="btn btn-filled" type="submit">Отправить данные</button>
-              <input type="checkbox" class="checkbox" name="personal" id="personal">
-              <label for="personal" class="checkbox-label">Согласен на обработку данных</label>
-            </div>
-          </form>
+          <div class="footer__request">
+            <h2 class="footer__title title">Оставить заявку</h2>
+            <form action="#" class="form">
+              <input class="input" type="text" name="name" placeholder="Фамилия, имя и отчество*">
+              <input class="input" type="email" name="email" placeholder="E-mail*">
+              <textarea class="textarea" name="text" id="" cols="30" rows="4" placeholder="Сообщение"></textarea>
+              <div class="form__row">
+                <button class="footer__btn btn btn-filled" type="submit">Отправить данные</button>
+                <input type="checkbox" class="checkbox" name="personal" id="personal">
+                <label for="personal" class="checkbox-label">Согласен на обработку данных</label>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="footer__col">
           <div class="footer__description">
