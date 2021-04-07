@@ -18,8 +18,9 @@
         <nav class="header__left nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Этапы</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
           </ul>
           <button class="btn-reset header__search">
@@ -51,8 +52,8 @@
       <section class="about">
         <div class="container about__container">
           <h2 class="about__title title">О нас</h2>
-          <article class="article">
-            <p class="article__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип       будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+          <article class="about__article article">
+            <p class="article__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип&nbsp;&nbsp; <span class="icon-i">i</span>    будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
           </article>
           <div class="about__content">
             <div class="about__col">
@@ -75,7 +76,7 @@
                   </svg>
                 </div>
                 <div class="service__descr">
-                  <h2 class="service__title">Консультация с широким активом</h2>
+                  <h3 class="service__title">Консультация с широким активом</h3>
                   <p class="service__text">
                     А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
                   </p>
@@ -124,7 +125,7 @@
                 </div>
               </div>
               <div class="step__col">
-                <img src="/img/how-it-work.jpg" alt="step-1">
+                <img class="step__img" src="/img/how-it-work.jpg" alt="step-1">
               </div>
             </div>
           </div>
@@ -178,17 +179,17 @@
       <div class="container footer__container">
         <div class="footer__col">
           <a href="" class="footer__logo logo">
-            <img src="img/logo.png" alt="Logo">
+            <img src="img/logo_white.png" alt="Logo">
           </a>
-          <nav class="footer__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Договор оферты</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Договор подряда</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Конфиденциальность</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Партнёрское соглашение</a></li>
+          <nav class="footer__nav">
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">О нас</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Проекты</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Отзывы</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Договор оферты</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Договор подряда</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Конфиденциальность</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнёрское соглашение</a></li>
             </ul>
 
             <ul class="social">
@@ -219,10 +220,12 @@
           <form action="#" class="form">
             <input class="input" type="text" name="name" placeholder="Фамилия, имя и отчество*">
             <input class="input" type="email" name="email" placeholder="E-mail*">
-            <textarea class="textarea" name="text" id="" cols="30" rows="10">Сообщение</textarea>
-            <button class="submit" class="btn btn-filled">Отправить данные</button>
-            <input type="checkbox" class="checkbox" name="personal" id="personal">
-            <label for="#personal" class="checkbox-label">Согласен на обработку данных</label>
+            <textarea class="textarea" name="text" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <div class="form__row">
+              <button class="btn btn-filled" type="submit">Отправить данные</button>
+              <input type="checkbox" class="checkbox" name="personal" id="personal">
+              <label for="personal" class="checkbox-label">Согласен на обработку данных</label>
+            </div>
           </form>
         </div>
         <div class="footer__col">
