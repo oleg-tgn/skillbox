@@ -132,13 +132,9 @@ svg {
   background: var(--color-orange);
 }
 
-.header__search svg rect {  fill: var(--color-grey); }
-.header__search:hover svg rect { fill: var(--color-orange); }
-.header__search:active svg rect{ fill: var(--color-orange-dark); }
-
-.header__search svg circle {  stroke: var(--color-grey); }
-.header__search:hover svg circle { stroke: var(--color-orange); }
-.header__search:active svg circle{ stroke: var(--color-orange-dark); }
+.header__search svg {  color: var(--color-grey); }
+.header__search:hover svg { color: var(--color-orange); }
+.header__search:active svg { color: var(--color-orange-dark); }
 
 /* Header */
 .header {
@@ -643,14 +639,15 @@ svg {
   display: inline-block;
   width: 60px;
   height: 60px;
+  color: #7c7c7c;
 }
 
-.social__link:hover path {
-  fill: var(--color-orange)
+.social__link:hover {
+  color: var(--color-orange)
 }
 
-.social__link:active path {
-  fill: var(--color-orange-dark)
+.social__link:active {
+  color: var(--color-orange-dark)
 }
 
 .social__link:not(:last-child) {
