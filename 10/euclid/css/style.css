@@ -533,15 +533,35 @@ svg {
   padding-left: 1px
 }
 
+
 .faq__item {
+  position: relative;
   border-bottom: 1px solid #CACACA;
+  transition: color .3s ease;
+  color: var(--color-grey);
 }
 
 .faq__item:first-child {
   border-top: 1px solid #CACACA;
 }
 
+.faq__item:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+}
+
+.faq__item:hover::before {
+  content: "";
+  height: 1px;
+  background: var(--color-orange);
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+}
+
 .faq__link {
+  display: table-cell;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -552,7 +572,7 @@ svg {
   font-size: 2.4rem;
   letter-spacing: 0.3px;
   line-height: 1;
-  color: var(--color-grey);
+  color: inherit;
 }
 
 .plus {
