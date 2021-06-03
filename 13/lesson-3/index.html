@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .menu {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 400px;
+            padding: 40px;
+            background-color: #f2f2f2;
+            transition: transform .3s ease-in-out;
+            transform: translateX(-101%);
+        }
+
         .menu.is-active {
             transform: none;
         }
@@ -29,7 +42,7 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <div id="menu">
+    <div id="menu" class="menu">
         <ul>
             <li>Menu 1</li>
             <li>Menu 2</li>
@@ -38,6 +51,12 @@
     </div>
     <div id="burger" class="burger"></div>
 
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus numquam perferendis ipsa veritatis maxime sunt veniam, necessitatibus earum ipsam cumque velit quia tempore aliquid molestias dolorum, adipisci temporibus voluptatum modi!
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus numquam perferendis ipsa veritatis maxime sunt veniam, necessitatibus earum ipsam cumque velit quia tempore aliquid molestias dolorum, adipisci temporibus voluptatum modi!
+    </p>
     <p class="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus numquam perferendis ipsa veritatis maxime sunt veniam, necessitatibus earum ipsam cumque velit quia tempore aliquid molestias dolorum, adipisci temporibus voluptatum modi!
     </p>
