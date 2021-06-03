@@ -463,7 +463,7 @@ svg {
   margin-bottom: 37px;
 }
 
-.steps__item {
+.steps__item:not(:last-child) {
   margin-right: 88px;
 }
 
@@ -1220,6 +1220,10 @@ svg {
     padding-right: 45px;
   }
 
+  .steps__tabs {
+    justify-content: space-between;
+  }
+
   .step__article, .step__img {
     width: 100%;
   }
@@ -1560,7 +1564,7 @@ svg {
   }
 
   .work__title {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 
   .tabs {
@@ -1582,6 +1586,19 @@ svg {
 
   .step__btn-filled {
     padding: 11px 40px;
+  }
+
+  .steps__tabs {
+    margin-bottom: 16px;
+    justify-content: space-between;
+  }
+
+  .steps__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .steps__link {
+    font-size: 14px;
   }
 
   .article__title {
