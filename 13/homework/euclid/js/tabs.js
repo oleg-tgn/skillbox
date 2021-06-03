@@ -3,10 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     tabsBtn.addEventListener('click', function(event) {
       const path = event.currentTarget.dataset.path;
 
-      document.querySelectorAll('.steps__content').forEach(function(tabContent) {
-        tabContent.classList.remove('steps-content-active')
+      document.querySelectorAll('.steps__link').forEach(function(tabContent) {
+        tabContent.classList.remove('active');
       });
-      document.querySelector(`[data-target="${path}"]`).classList.add('steps-content-active')
+
+      document.querySelectorAll('.steps__content').forEach(function(tabContent) {
+        tabContent.classList.remove('steps-content-active');
+      });
+      event.currentTarget.classList.add('active');
+      document.querySelector(`[data-target="${path}"]`).classList.add('steps-content-active');
     })
   });
 });

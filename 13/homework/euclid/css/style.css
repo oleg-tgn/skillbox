@@ -522,13 +522,15 @@ svg {
   margin-top: 19px;
   margin-left: 142px;
   width: calc(100% - 17px);
+  height: 460px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.step__img--1 {
-  background-image: url("../img/how-it-work.jpg");
-}
+.step__img--1 { background-image: url("../img/step-1.jpg"); }
+.step__img--2 { background-image: url("../img/step-2.jpg"); }
+.step__img--3 { background-image: url("../img/step-3.jpg"); }
+.step__img--4 { background-image: url("../img/step-4.jpg"); }
 
 .step__btn-filled {
   line-height: 1;
