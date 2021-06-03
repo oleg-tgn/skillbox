@@ -22,14 +22,16 @@
   <div class="site-container">
     <header class="header">
       <div class="container header__container">
-        <button class="btn-reset burger">
-          <svg width="30" height="23"><use xlink:href="img/icons.svg#reset"></use></svg>
+        <button class="btn-reset burger" id="burger">
+          <svg width="30" height="23" id="burger-img" class="burger-img is-active"><use xlink:href="img/icons.svg#reset"></use></svg>
+
+          <svg width="23" height="23" id="burger-close" class="burger-img"><use xlink:href="img/icons.svg#burger_close"></use></svg>
         </button>
         <a href="#" class="header__logo logo">
           <img src="img/logo.png" alt="Logo">
         </a>
         <nav class="header__left nav">
-          <ul class="nav__list">
+          <ul class="nav__list" id="menu">
             <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Этапы</a></li>
@@ -276,5 +278,6 @@
   <script src="js/slider.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/accordion.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 </html>
