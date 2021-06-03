@@ -600,18 +600,26 @@ svg {
 }
 
 .faq__link {
-  display: table-cell;
   position: relative;
   display: flex;
+  padding: 30px 0;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 0;
   font-weight: 600;
   font-size: 2.4rem;
   letter-spacing: 0.3px;
   line-height: 1;
   color: inherit;
+}
+
+.faq__desc {
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.faq__label {
+  display: block;
+  text-align: left;
 }
 
 .plus {
@@ -620,11 +628,13 @@ svg {
   width: 50px;
   min-width: 50px;
   height: 50px;
+  margin-left: auto;
   border-radius: 50%;
   background: #ECECEC;
+  transition: transform .5s ease;
 }
 
-.plus:before {
+.plus::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -633,6 +643,10 @@ svg {
   width: 46px;
   height: 46px;
   background: url("../img/plus.svg") no-repeat center;
+}
+
+.ui-state-active .plus {
+  transform: rotate(45deg);
 }
 
 /* Footer */
