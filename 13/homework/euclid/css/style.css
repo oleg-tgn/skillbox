@@ -572,7 +572,6 @@ svg {
   padding-left: 1px
 }
 
-
 .faq__item {
   position: relative;
   border-bottom: 1px solid #CACACA;
@@ -599,9 +598,37 @@ svg {
   right: 0;
 }
 
-.faq__link {
+.plus {
   position: relative;
   display: flex;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ECECEC;
+  transition: transform .5s ease, background-color .5s ease;
+  color: #666666;
+}
+
+.plus svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.faq__item:hover .plus{
+  background-color: #FF9900;
+  color: #fff;
+}
+
+.faq__button {
+  position: relative;
+  display: flex;
+  width: 100%;
   padding: 30px 0;
   flex-direction: row;
   align-items: center;
@@ -610,39 +637,19 @@ svg {
   letter-spacing: 0.3px;
   line-height: 1;
   color: inherit;
+  border: none;
+  background: #fff;
+  cursor: pointer;
 }
 
 .faq__desc {
-  padding-right: 50px;
-  padding-bottom: 30px;
+  padding: 30px 50px 30px 0;
+  border-bottom: 1px solid #CACACA;
 }
 
 .faq__label {
   display: block;
   text-align: left;
-}
-
-.plus {
-  position: relative;
-  display: block;
-  width: 50px;
-  min-width: 50px;
-  height: 50px;
-  margin-left: auto;
-  border-radius: 50%;
-  background: #ECECEC;
-  transition: transform .5s ease;
-}
-
-.plus::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  display: inline-block;
-  width: 46px;
-  height: 46px;
-  background: url("../img/plus.svg") no-repeat center;
 }
 
 .ui-state-active .plus {
