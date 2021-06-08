@@ -1675,11 +1675,9 @@ svg {
     height: 30px;
   }
 
-  .plus:before {
+  .plus svg {
     width: 18px;
     height: 18px;
-    left: 7px;
-    top: 6px;
   }
 
   .about__col:first-child {
