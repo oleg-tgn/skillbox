@@ -6,43 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
-    <label class="label">
-      Категории:
-    </label>
-    <label for="check1" class="checkbox-label">
-      <input type="checkbox" id="check1" name="check" class="checkbox">
-      Динозавры
-      <span></span>
-    </label>
-    <label for="check2" class="checkbox-label">
-      <input type="checkbox" id="check2" name="check" class="checkbox">
-      Медведи
-      <span></span>
-    </label>
-    <label for="check3" class="checkbox-label">
-      <input type="checkbox" id="check3" name="check" class="checkbox">
-      Косули
-      <span></span>
-    </label>
-    <label for="check4" class="checkbox-label">
-      <input type="checkbox" id="check4" name="check" class="checkbox">
-      Лисы
-      <span></span>
-    </label>
-    <label for="check5" class="checkbox-label">
-      <input type="checkbox" id="check5" name="check" class="checkbox">
-      Волки
-      <span></span>
-    </label>
-    <label for="check6" class="checkbox-label">
-      <input type="checkbox" id="check6" name="check" class="checkbox">
-      Олени и лоси
-      <span></span>
-    </label>
+    <div class="checkbox-list">
+      <label class="label">
+        Категории:
+      </label>
+      <label for="check1" class="checkbox-label">
+        <input type="checkbox" id="check1" name="check" class="checkbox">
+        Динозавры
+        <span></span>
+      </label>
+      <label for="check2" class="checkbox-label">
+        <input type="checkbox" id="check2" name="check" class="checkbox">
+        Медведи
+        <span></span>
+      </label>
+      <label for="check3" class="checkbox-label">
+        <input type="checkbox" id="check3" name="check" class="checkbox">
+        Косули
+        <span></span>
+      </label>
+      <label for="check4" class="checkbox-label">
+        <input type="checkbox" id="check4" name="check" class="checkbox">
+        Лисы
+        <span></span>
+      </label>
+      <label for="check5" class="checkbox-label">
+        <input type="checkbox" id="check5" name="check" class="checkbox">
+        Волки
+        <span></span>
+      </label>
+      <label for="check6" class="checkbox-label">
+        <input type="checkbox" id="check6" name="check" class="checkbox">
+        Олени и лоси
+        <span></span>
+      </label>
+    </div>
 
     <select name="select">    
       <option placeholder>Материал</option>  
@@ -54,9 +57,58 @@
       <option value="">Гипс</option>
     </select>
 
+
+    <div id="map" style="width: 600px; height: 400px"></div>
+
+
+    <div class="customScroll" data-simplebar>
+      Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+    </div>
+
+
+    <form action="" class="form">
+      <div class="form__row">
+        <input 
+          class="form__input"
+          name="Имя"
+          type="text"
+          placeholder="Имя*"
+          data-validate-field="name"
+        >
+      </div>
+      <div class="form__row">
+        <input 
+          class="form__input"
+          name="tel"
+          type="tel"
+          placeholder="Телефон*"
+          data-validate-field="tel"
+          data-validate-rules="phone"
+        >
+      </div>
+      <div class="form__row">
+        <input 
+          class="form__input"
+          name="email"
+          type="email"
+          placeholder="E-mail*"
+          data-validate-field="email"
+        >
+      </div>
+      <button class="form__button">Отправить</button>
+    </form>
   </div>
 
+
   <script src="js/choices.min.js"></script> 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=fc15d14f-d1a4-4335-9e3f-6ccea4f1ef47&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+
+
   <script src="js/script.js"></script> 
+  <script src="js/map.js"></script> 
+  <script src="js/validate-rules.js"></script> 
 </body>
 </html>
