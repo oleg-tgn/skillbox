@@ -227,6 +227,8 @@ body {
   width: 375px;
   padding: 20px 30px;
   background: #fff;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .tooltip {  
@@ -237,8 +239,11 @@ body {
 .marker {
   width: 20px;
   height: 20px;
-  background: black;
+  background: #999999;
   border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
 }
 
 .popup {
@@ -261,10 +266,16 @@ body {
 .popup:before {
   content: ''; 
   position: absolute;
-  left: 76px;  
+  left: 77px;  
   bottom: -16px;
   border: 5px solid transparent;
   border-top: 12px solid #424242;
+}
+
+.marker:hover,
+.marker:focus {
+  background: #FF5C00;
+  cursor: pointer;
 }
 
 .marker:hover + .popup,
