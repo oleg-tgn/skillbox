@@ -166,8 +166,9 @@ body {
 
 /* Form */
 .form {
-  display: block;
+  display: block;  
   max-width: 440px;
+  margin: 50px 0;
   padding: 38px 30px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -219,4 +220,54 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #FF5C00 !important;
+}
+
+/* Tooltip */
+.article {
+  width: 375px;
+  padding: 20px 30px;
+  background: #fff;
+}
+
+.tooltip {  
+  position: relative;
+  display: inline-block;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+}
+
+.popup {
+  position: absolute;
+  top: -55px;
+  left: 0;
+  transform: translateX(-50%);
+  margin-left: 10px;
+  width: 164px;
+  padding: 7px 15px;
+  margin-top: 10px;
+  background: #424242;
+  color: white;
+  opacity: 0;
+  font-size: 12px;
+  text-align: center;
+  transition: opacity .3s ease-in-out;
+}
+
+.popup:before {
+  content: ''; 
+  position: absolute;
+  left: 76px;  
+  bottom: -16px;
+  border: 5px solid transparent;
+  border-top: 12px solid #424242;
+}
+
+.marker:hover + .popup,
+.marker:focus + .popup{
+  opacity: 1;
 }
