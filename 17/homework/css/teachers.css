@@ -1,26 +1,35 @@
 .teachers {
-  padding: 80px 0;
+  padding: 47px 0 20px;
   background: #212133;
 }
 
 .teachers__title {
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1;  
   color: #FFFFFF;
 }
 
 .teacher {
-  margin-bottom: 30px;
-  border-radius: 0;
+  margin-bottom: 23px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   overflow: hidden;
 }
 
 .teacher__img {
   width: 100%;
-  margin-bottom: 30px;
+  height: 180px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center center;
 }
+
+.teacher__img--1 { background-image: url("../img/teacher-1.jpg"); }
+.teacher__img--2 { background-image: url("../img/teacher-2.jpg"); }
+.teacher__img--3 { background-image: url("../img/teacher-3.jpg"); }
+.teacher__img--4 { background-image: url("../img/teacher-4.jpg"); }
 
 .teacher__name {
   margin-bottom: 12px;
@@ -41,7 +50,16 @@
     padding: 74px 0 73px;
   }
 
+  .teachers__title {   
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
   .teacher {
     margin-bottom: 0;
+  }
+
+  .teacher__img {   
+    margin-bottom: 30px;
   }
 }

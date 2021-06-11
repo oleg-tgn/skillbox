@@ -1,12 +1,13 @@
 .header {
   position: relative;
-  padding: 32px 0 27px;
+  padding: 27px 0 24px;
   background: #3F2AFF;  
 }
 
 .header__container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .header__logo {
@@ -53,5 +54,11 @@
 
   .nav__item:not(:last-child) {
     margin-right: 56px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .header {  
+    padding: 32px 0 27px;
   }
 }
