@@ -1,6 +1,7 @@
 .header {
+  position: relative;
   padding: 30px 0;
-  background: #3F2AFF;
+  background: #3F2AFF;  
 }
 
 .header__container {

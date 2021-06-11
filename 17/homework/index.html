@@ -15,12 +15,12 @@
       <a href="index.html" class="header__logo">
         <svg width="94" height="21" class="logo"><use xlink:href="img/icons.svg#logo"></use></svg>
       </a>
-      <button class="btn-reset burger" id="burger">
+      <button class="burger" id="burger">
         <svg width="30" height="23" id="burger-img" class="burger-img is-active"><use xlink:href="img/icons.svg#burger"></use></svg>
         <svg width="23" height="23" id="burger-close" class="burger-img"><use xlink:href="img/icons.svg#burger_close"></use></svg>
       </button>
       <nav class="nav">
-        <ul class="nav__list">
+        <ul class="nav__list" id="menu">
           <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
           <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Преподаватели</a></li>
@@ -111,36 +111,44 @@
     <div class="container">
       <h2 class="courses__title">Курсы</h2>
       <div class="row">
-        <div class="col-6">
-          <div class="course">
+        <div class="col-12 col-sm-6">
+          <div class="course course--1">
             <span class="course__time">60 часов</span>
-            <h3 class="course__name">Cinema 4d для начинающих</h3>
-            <p class="course__desc">Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит от стандартных подходов.</p>
-            <a href="" class="course__link">Подробнее</a>
+            <div class="course__descr">
+              <h3 class="course__name">Cinema 4d для начинающих</h3>
+              <p class="course__text">Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит от стандартных подходов.</p>
+              <a href="" class="course__link">Подробнее</a>
+            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="course">
+        <div class="col-12 col-sm-6">
+          <div class="course course--2">
             <span class="course__time">40 часов</span>
-            <h3 class="course__name">Blender: продвинутый уровень</h3>
-            <p class="course__desc">Но убеждённость некоторых оппонентов в значительной степени обусловливает важность форм воздействия. Внезапно, тщательные исследования конкурентов представлены.</p>
-            <a href="" class="course__link">Подробнее</a>
+            <div class="course__descr">              
+              <h3 class="course__name">Blender: продвинутый уровень</h3>
+              <p class="course__text">Но убеждённость некоторых оппонентов в значительной степени обусловливает важность форм воздействия. Внезапно, тщательные исследования конкурентов представлены.</p>
+              <a href="" class="course__link">Подробнее</a>
+            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="course">
+        <div class="col-12 col-sm-6">
+          <div class="course course--3">
             <span class="course__time">40 часов</span>
-            <h3 class="course__name">Визуализация в 3ds Max</h3>
-            <p class="course__desc">Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность кластеризации усилий.</p>
-            <a href="" class="course__link">Подробнее</a>
+            <div class="course__descr">              
+              <h3 class="course__name">Визуализация в 3ds Max</h3>
+              <p class="course__text">Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность кластеризации усилий.</p>
+              <a href="" class="course__link">Подробнее</a>
+            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="course">
+        <div class="col-12 col-sm-6">
+          <div class="course course--4">
             <span class="course__time">80 часов</span>
-            <h3 class="course__name">Скульптинг в ZBrush</h3>
-            <p class="course__desc">Разнообразный и богатый опыт говорит нам, что граница обучения кадров требует определения и уточнения прогресса профессионального сообщества! В частности, постоянный количественный рост и сфера нашей активности.</p>
-            <a href="" class="course__link">Подробнее</a>
+            <div class="course__descr">
+              <h3 class="course__name">Скульптинг в ZBrush</h3>
+              <p class="course__text">Разнообразный и богатый опыт говорит нам, что граница обучения кадров требует определения и уточнения прогресса профессионального сообщества! В частности, постоянный количественный рост и сфера нашей активности.</p>
+              <a href="" class="course__link">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
@@ -149,24 +157,32 @@
   <footer class="footer">
     <div class="container">
       <ul class="social">
-        <li class="socila__item">
-          <a href="#" class="sociail__link"></a>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="social__icon"><use xlink:href="img/icons.svg#facebook"></use></svg>
+          </a>
         </li>
-        <li class="socila__item">
-          <a href="#" class="sociail__link"></a>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="social__icon"><use xlink:href="img/icons.svg#twitter"></use></svg>
+          </a>
         </li>
-        <li class="socila__item">
-          <a href="#" class="sociail__link"></a>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="social__icon"><use xlink:href="img/icons.svg#inst"></use></svg>
+          </a>
         </li>
-        <li class="socila__item">
-          <a href="#" class="sociail__link"></a>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="social__icon"><use xlink:href="img/icons.svg#youtube"></use></svg>
+          </a>
         </li>
       </ul>
     </div>
   </footer>
   <section class="copyright">
     <div class="container">
-      SKILLBOX ® 2020
+      SKILLBOX <span class="copyright__r">®</span> 2020
     </div>
   </section>
 
