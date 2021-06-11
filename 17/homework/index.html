@@ -11,8 +11,14 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a href="index.html">Skillbox</a>
+    <div class="container header__container">      
+      <a href="index.html" class="header__logo">
+        <svg width="94" height="21" class="logo"><use xlink:href="img/icons.svg#logo"></use></svg>
+      </a>
+      <button class="btn-reset burger" id="burger">
+        <svg width="30" height="23" id="burger-img" class="burger-img is-active"><use xlink:href="img/icons.svg#burger"></use></svg>
+        <svg width="23" height="23" id="burger-close" class="burger-img"><use xlink:href="img/icons.svg#burger_close"></use></svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
@@ -24,13 +30,13 @@
     </div>
   </header>
   <section class="hero">
-    <div class="container">
+    <div class="container hero__container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="hero__description">
             <h1 class="hero__title">Курсы 3D моделирования</h1>
             <p class="hero__text">Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив. Не следует, однако, забывать.</p>
-            <a href="#" class="btn hero__link">Выбрать курс</a>
+            <a href="#" class="btn hero__button">Выбрать курс</a>
           </div>
         </div>
       </div>
@@ -45,19 +51,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-4">
-          <div class="about__advantage about__advantage--1">
-            Результат вашего обучения является самым важным для нас приоритетом
+        <div class="col-12 col-sm-4">
+          <div class="about__advantage">
+            <svg width="80" height="80" class="about__advantage-icon"><use xlink:href="img/icons.svg#about-1"></use></svg>
+            <span class="about__advantage-text">Результат вашего обучения является самым важным для нас приоритетом</span>
           </div> 
         </div>
-        <div class="col-4">
-          <div class="about__advantage about__advantage--2">
-            Лично познакомитесь с одним из своих будущих преподавателей
+        <div class="col-12 col-sm-4">
+          <div class="about__advantage">
+            <svg width="80" height="80" class="about__advantage-icon"><use xlink:href="img/icons.svg#about-2"></use></svg>
+            <span class="about__advantage-text">Лично познакомитесь с одним из своих будущих преподавателей</span>
           </div> 
         </div>
-        <div class="col-4">
-          <div class="about__advantage about__advantage--3">
-            Значимость этих проблем очевидна, поэтому стоит всегда быть внимательнымРезультат вашего обучения является самым важным для нас приоритетом
+        <div class="col-12 col-sm-4">
+          <div class="about__advantage">
+            <svg width="80" height="80" class="about__advantage-icon"><use xlink:href="img/icons.svg#about-3"></use></svg>
+            <span class="about__advantage-text">Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным</span>
           </div> 
         </div>
       </div>
@@ -67,31 +76,31 @@
     <div class="container">
       <h2 class="teachers__title">Преподаватели курсов</h2>
       <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="teacher">
-            <img src="#" alt="#" class="teacher__img">
-            <h3 class="teaher__name">Владимир Петров</h3>
+            <img src="img/teacher-1.png" alt="Владимир Петров" class="teacher__img">
+            <h3 class="teacher__name">Владимир Петров</h3>
             <p class="teaher__description">Лишь непосредственные участники технического прогресса неоднозначны и будут в равной степени предоставлены сами себе.</p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="teacher">
-            <img src="#" alt="#" class="teacher__img">
-            <h3 class="teaher__name">Денис Сергеев</h3>
+            <img src="img/teacher-2.png" alt="Денис Сергеев" class="teacher__img">
+            <h3 class="teacher__name">Денис Сергеев</h3>
             <p class="teaher__description">Безусловно, разбавленное изрядной долей эмпатии, рациональное мышление.</p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="teacher">
-            <img src="#" alt="#" class="teacher__img">
-            <h3 class="teaher__name">Михаил Андреев</h3>
+            <img src="img/teacher-3.png" alt="Михаил Андреев" class="teacher__img">
+            <h3 class="teacher__name">Михаил Андреев</h3>
             <p class="teaher__description">Ясность нашей позиции очевидна: высокое качество позиционных исследований напрямую зависит от вывода.</p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="teacher">
-            <img src="#" alt="#" class="teacher__img">
-            <h3 class="teaher__name">Константин Дмитриев</h3>
+            <img src="img/teacher-4.png" alt="Константин Дмитриев" class="teacher__img">
+            <h3 class="teacher__name">Константин Дмитриев</h3>
             <p class="teaher__description">Мы вынуждены отталкиваться от того, что существующая теория, в своём классическом представлении.</p>
           </div>
         </div>
@@ -137,5 +146,30 @@
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <ul class="social">
+        <li class="socila__item">
+          <a href="#" class="sociail__link"></a>
+        </li>
+        <li class="socila__item">
+          <a href="#" class="sociail__link"></a>
+        </li>
+        <li class="socila__item">
+          <a href="#" class="sociail__link"></a>
+        </li>
+        <li class="socila__item">
+          <a href="#" class="sociail__link"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <section class="copyright">
+    <div class="container">
+      SKILLBOX ® 2020
+    </div>
+  </section>
+
+  <script src="js/burger.js"></script>
 </body>
 </html>

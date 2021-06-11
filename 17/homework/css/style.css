@@ -1,33 +1,7 @@
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: 'Open Sans', sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: 3px solid rgba(0, 0, 255, .3);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  max-width: 1200px;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('main.css');
+@import url('header.css');
+@import url('burger.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('teachers.css');

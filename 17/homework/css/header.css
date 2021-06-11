@@ -1,0 +1,42 @@
+.header {
+  padding: 30px 0;
+  background: #3F2AFF;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__link {
+  color: #fff;
+}
+
+@media (min-width: 510px) and (max-width: 689px) {
+  .header__container {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin: 0 auto 30px;
+  }
+
+  .nav__list {
+    justify-content: space-between;
+  } 
+}
+
+@media (min-width: 510px) {
+  .nav__item:not(:last-child) {
+    margin-right: 56px;
+  }
+}

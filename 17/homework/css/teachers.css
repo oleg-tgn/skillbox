@@ -1,0 +1,43 @@
+.teachers {
+  padding: 80px 0;
+  background: #212133;
+}
+
+.teachers__title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;  
+  color: #FFFFFF;
+}
+
+.teacher {
+  margin-bottom: 30px;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.teacher__img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.teacher__name {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+}
+
+.teaher__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #85859B;
+}
+
+@media (min-width: 1110px) {
+  .teacher {
+    margin-bottom: 0;
+  }
+}
