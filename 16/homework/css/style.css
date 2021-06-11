@@ -237,27 +237,28 @@ body {
 }
 
 .marker {
-  width: 20px;
-  height: 20px;
-  background: #999999;
+  width: 16px;
+  height: 16px;
+  background: #BCBCBC;
   border-radius: 50%;
   color: #fff;
   text-align: center;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .popup {
   position: absolute;
-  top: -55px;
-  left: 0;
-  transform: translateX(-50%);
-  margin-left: 10px;
-  width: 164px;
+  bottom: 27px;
+  left: 8px;
+  transform: translateX(-50%);  
+  width: max-content;
+  max-width: 164px;
   padding: 7px 15px;
   margin-top: 10px;
-  background: #424242;
+  background: #666;
   color: white;
-  opacity: 0;
+  opacity: 1;
   font-size: 12px;
   text-align: center;
   transition: opacity .3s ease-in-out;
@@ -266,15 +267,15 @@ body {
 .popup:before {
   content: ''; 
   position: absolute;
-  left: 77px;  
+  left: calc(50% - 5px);
   bottom: -16px;
   border: 5px solid transparent;
-  border-top: 12px solid #424242;
+  border-top: 12px solid #666;
 }
 
 .marker:hover,
 .marker:focus {
-  background: #FF5C00;
+  background: #CCB26E;
   cursor: pointer;
 }
 
