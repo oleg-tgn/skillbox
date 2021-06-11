@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  padding: 30px 0 23px;
+  padding: 32px 0 27px;
   background: #3F2AFF;  
 }
 
@@ -22,6 +22,11 @@
   color: #fff;
 }
 
+.logo {
+  width: 72px;
+  height: 16px;
+}
+
 @media (min-width: 510px) and (max-width: 689px) {
   .header__container {
     flex-direction: column;
@@ -37,6 +42,15 @@
 }
 
 @media (min-width: 510px) {
+  .header {  
+    padding: 30px 0 23px;
+  }
+
+  .logo {
+    width: 94px;
+    height: 21px;
+  }
+
   .nav__item:not(:last-child) {
     margin-right: 56px;
   }

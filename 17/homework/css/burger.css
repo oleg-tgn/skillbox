@@ -1,6 +1,6 @@
 .burger {
-  width: 20px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
   position: relative;
   color: #fff;
   display: none;
@@ -8,8 +8,13 @@
   border: 0;
   background: none;
   padding: 0;
-  margin: 0;
+  margin: 0 11px 0 0;
   cursor: pointer;
+}
+
+.burger-img {
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 509px) {
