@@ -3,6 +3,10 @@
   padding: 50px 0;
 }
   
+.hero__description {
+  max-width: 460px;
+}
+
 .hero__title {
   margin: 0 0 15px;
   font-size: 30px;
@@ -23,6 +27,7 @@
   font-size: 16px;
   line-height: 1;
   color: #fff;
+  letter-spacing: 0.4px;
   background: rgba(63, 42, 255, 1);
   border-radius: 20px;
   transition: background-color .3s ease;
@@ -44,7 +49,7 @@
   }
 
   .hero__text {
-    margin-bottom: 70px;
+    margin-bottom: 62px;
     font-size: 18px;
     line-height: 1.5;    
   }
@@ -57,7 +62,7 @@
 
 @media (min-width: 690px) {
   .hero {
-    padding: 130px 0;
+    padding: 130px 0 132px;
   }
 
   .hero__container {
@@ -92,7 +97,8 @@
   }
 
   .hero__container::after {    
-    top: -125px;
+    top: -115px;
+    right: 14px;
     width: 632px;
     height: 593px;
   }

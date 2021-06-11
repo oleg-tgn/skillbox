@@ -21,9 +21,16 @@
 }
 
 .copyright {
+    font-size: 13px;
     text-align: center;
 }
 
 .copyright__r {
     color: #3F2AFF;
+}
+
+@media (min-width: 1110px) {
+    .footer {
+        padding: 28px 0 23px;
+    }
 }

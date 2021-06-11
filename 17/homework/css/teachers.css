@@ -4,7 +4,7 @@
 }
 
 .teachers__title {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;  
@@ -23,7 +23,7 @@
 }
 
 .teacher__name {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 18px;
   line-height: 1;
@@ -37,6 +37,10 @@
 }
 
 @media (min-width: 1110px) {
+  .teachers {
+    padding: 74px 0 73px;
+  }
+
   .teacher {
     margin-bottom: 0;
   }
