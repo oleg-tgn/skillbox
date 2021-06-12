@@ -15,7 +15,7 @@
 }
   
 .hero__text {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
   font-size: 16px;
   line-height: 1.3;
   color: #fff;
@@ -40,23 +40,28 @@
 
 @media (min-width: 510px) {
   .hero {
-    padding: 77px 0 135px;
+    padding: 77px 0 136px;
   }
 
   .hero__title {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 50px;
   }
 
   .hero__text {
     margin-bottom: 62px;
     font-size: 18px;
-    line-height: 1.5;    
+    line-height: 1.5;   
+    max-width: 345px; 
   }
 
   .hero__button {
-    padding: 24px 75px;
+    padding: 25px 75px;
     font-size: 18px;    
+  }
+
+  .hero__description {
+    padding-left: 18px;
   }
 }
 

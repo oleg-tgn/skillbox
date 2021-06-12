@@ -53,8 +53,8 @@
   color: #2E2B44;
 }
 
-.course__text { 
-  margin-bottom: 82px;
+.course__text {
+  margin-bottom: 81px;
   font-size: 16px;
   line-height: 1.5;
   color: #666;
@@ -111,7 +111,25 @@
 
 @media (min-width: 510px) {
   .courses {
-    padding: 74px 0 50px;
+    padding: 74px 18px 49px;
+}
+
+  .courses__title {
+    margin-bottom: 23px;
+    font-size: 40px;
+  }
+
+  .course__descr {   
+    padding: 31px 20px 0 30px;
+  }
+
+  .course__text {
+    margin-bottom: 33px;
+    padding-right: 10px;
+  }
+
+  .course__link {    
+    width: 180px;
   }
 }
 
