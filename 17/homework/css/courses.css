@@ -133,6 +133,29 @@
   }
 }
 
+@media (min-width: 690px) {
+  .courses {
+    padding: 74px 24px 50px;
+  }
+
+  .courses__title {
+    margin-bottom: 24px;
+  }
+
+  .course {
+    padding: 182px 0 30px 0;
+  }
+
+  .course__text {
+    margin-bottom: 29px;
+    padding-right: 4px;
+  }
+
+  .course__link {
+    width: 195px;
+  }
+}
+
 @media (min-width: 1110px) {
   .courses {
     padding: 74px 0 50px;

@@ -67,7 +67,7 @@
 
 @media (min-width: 690px) {
   .hero {
-    padding: 130px 0 132px;
+    padding: 130px 6px 136px;
   }
 
   .hero__container {
@@ -77,11 +77,11 @@
   .hero__container::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
+    top: -15px;
+    right: 33px;
+    width: 330px;
     height: 100%;
-    background: url('../img/hero.png') center center;
+    background: url('../img/hero_690.png') center center;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -115,5 +115,13 @@
 
   .hero__button {  
     padding: 20px 53px;
+  }
+
+  .hero__container::after {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../img/hero.png') center center;
   }
 }

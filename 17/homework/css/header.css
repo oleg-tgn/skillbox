@@ -57,6 +57,16 @@
   }
 }
 
+@media (min-width: 690px) {
+  .header {
+    padding: 27px 25px 24px;
+  }
+
+  .header__logo {
+    margin-top: 3px;
+  }
+}
+
 @media (min-width: 1110px) {
   .header {  
     padding: 32px 0 27px;

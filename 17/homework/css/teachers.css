@@ -56,6 +56,12 @@
   }
 }
 
+@media (min-width: 690px) {
+  .teachers {
+    padding: 74px 24px 26px;
+  }
+}
+
 @media (min-width: 1110px) {
   .teachers {
     padding: 74px 0 73px;
