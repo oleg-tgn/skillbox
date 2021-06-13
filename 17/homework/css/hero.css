@@ -97,13 +97,23 @@
 }
 
 @media (min-width: 1110px) {
+  .hero {
+    padding: 130px 0 131px;
+  }
+
+  .hero__description {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
   .hero__title {
-    margin: 0 0 15px;
+    margin: 0 0 28px;
     font-size: 60px;
   }
 
   .hero__text {
-    margin-bottom: 50px;
+    max-width: 460px;
+    margin-bottom: 62px;
   }
 
   .hero__container::after {    
@@ -114,14 +124,15 @@
   }
 
   .hero__button {  
-    padding: 20px 53px;
+    padding: 25px 75px;
   }
 
   .hero__container::after {
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
+    top: -116px;
+    right: 15px;
+    width: 632px;
     background: url('../img/hero.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
