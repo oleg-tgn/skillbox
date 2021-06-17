@@ -1,0 +1,62 @@
+.hero__container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.banner__descr {
+  position: absolute;
+  width: 265px;
+  top: 34px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+}
+
+.banner__title {
+  max-width: 840px;
+  margin-bottom: 14px;
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--color-white);
+}
+
+.banner__text {
+  max-width: 840px;
+  margin-bottom: 41px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: var(--color-white);
+}
+
+.banner__btn {
+  display: inline-block;
+  padding: 12px 19px 12px 21px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  background: #9D5CD0;
+  border-radius: 100px;
+}
+
+.hero-slider-container {
+  height: 310px;
+}
+
+.hero-slider-container .swiper-slide {
+  background-size: cover;
+}
+
+.hero-slide--1 { background-image: url('../img/banner-1.jpg'); }
+.hero-slide--2 { background-image: url('../img/banner-2.jpg'); }
+.hero-slide--3 { background-image: url('../img/banner-3.jpg'); }
