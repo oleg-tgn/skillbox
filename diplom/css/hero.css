@@ -1,3 +1,7 @@
+.hero {
+  margin-bottom: 50px;
+}
+
 .hero__container {
   padding-right: 0;
   padding-left: 0;
@@ -6,7 +10,6 @@
 /* Banner */
 .banner {
   position: relative;
-  margin-bottom: 100px;
 }
 
 .banner__descr {

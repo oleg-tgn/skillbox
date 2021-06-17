@@ -3,6 +3,7 @@
 @import 'header.css';
 @import 'slider.css';
 @import 'hero.css';
+@import 'about.css';
 
 .btn {
   display: inline-block;
@@ -148,45 +149,6 @@
 
 
 
-/* About */
-.about {
-  margin-bottom: 101px;
-}
-
-.about__content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 44px;
-}
-
-.about__col {
-  width: 50%;
-}
-
-.about__col:first-child {
-  padding-right: 15px;
-}
-
-.about__col:last-child {
-  padding-left: 15px;
-}
-
-.about__desc {
-  margin-top: 10px;
-  font-family: Montserrat;
-}
-
-.about__service:first-child {
-  margin-bottom: 30px;
-}
-
-.about__title {
-  margin-bottom: 22px;
-}
-
-.about__article {
-  max-width: 1235px;
-}
 
 .project {
   display: flex;
@@ -631,23 +593,6 @@
 }
 
 @media (max-width: 1366px) {
-  .about__content {
-    flex-direction: column;
-  }
-
-  .about__col {
-    width: 100%;
-  }
-
-  .about__col:first-child {
-    margin-bottom: 30px;
-    padding: 0;
-  }
-
-  .about__col:last-child {
-    padding: 0;
-  }
-
   .project {
     height: 500px;
     background-size: cover;
@@ -688,20 +633,12 @@
     margin-right: 0;
   }
 
-  .about {
-    margin-bottom: 65px;
-  }
-
   .title {
     font-size: 48px;
   }
 
   .step__col {
     width: 100%;
-  }
-
-  .about__title {
-    margin-bottom: 32px;
   }
 
   .article {
@@ -728,10 +665,6 @@
     line-height: 16px;
   }
 
-  .about__content {
-    margin-top: 58px;
-  }
-
   .project {
     height: 640px;
   }
@@ -756,20 +689,12 @@
     padding: 19px 35px 19px 35px;
   }
 
-  .about__col:first-child {
-    margin-bottom: 50px;
-  }
-
   .service--1 {
     padding: 66px 100px 65px 349px;
   }
 
   .service--2 {
     padding: 66px 100px 65px 349px;
-  }
-
-  .about__service:first-child {
-    margin-bottom: 40px;
   }
 
   .service--1::before {
@@ -869,11 +794,6 @@
     flex-direction: column;
   }
 
-  .about__container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .project {
     height: 650px;
   }
@@ -888,10 +808,6 @@
 
   .project__link {
     margin-top: 2px;
-  }
-
-  .about__col:first-child {
-    margin-bottom: 40px;
   }
 
   .service--1 {
@@ -1058,26 +974,13 @@
     margin-bottom: 20px;
   }
 
-  .hero,
   .work {
     margin-bottom: 40px;
-  }
-
-  .about__title {
-    margin-bottom: 2px;
   }
 
   .article__text {
     font-size: 14px;
     line-height: 2;
-  }
-
-  .about__content {
-    margin-top: 11px;
-  }
-
-  .about__service:first-child {
-    margin-bottom: 20px;
   }
 
   .project {
@@ -1173,10 +1076,6 @@
     width: calc(100% - 106px);
   }
 
-  .about {
-    margin-bottom: 47px;
-  }
-
   .tabs {
     justify-content: space-between;
     margin-bottom: 20px;
@@ -1244,10 +1143,6 @@
   .plus svg {
     width: 18px;
     height: 18px;
-  }
-
-  .about__col:first-child {
-    margin-bottom: 0;
   }
 
   .faq {

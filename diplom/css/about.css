@@ -1,0 +1,22 @@
+.about {
+  margin-bottom: 50px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.about__title {
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #333;
+}
+
+.about__desc {
+  font-size: 14px;
+  line-height: 28px;
+  color: #333;
+}
