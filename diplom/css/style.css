@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import 'main.css';
+@import 'choices.min.css';
+@import 'select.css';
 @import 'header.css';
 @import 'slider.css';
 @import 'hero.css';
 @import 'about.css';
+@import 'gallery.css';
 
 .btn {
   display: inline-block;
