@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     },
   });
-
  
   swiperGallery.appendSlide(slides.painting);
 
